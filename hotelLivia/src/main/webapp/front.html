@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Livia</title>
+    <!-- Google Fonts Integration -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #6a5acd;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #6a5acd; /* Dark purple color for buttons */
+            color: white;
+            padding: 12px 0;
+            width: 160px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #483d8b; /* Lighter purple on hover */
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Exit button specific styling */
+        .exit-button {
+            background-color: #555555;
+        }
+
+        .exit-button:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HOTEL LIVIA</h1>
+        <a href="login.html"><button>Login</button></a>
+        <a href="register.html"><button>Register</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
+        <a href="exit"><button class="exit-button">Exit</button></a>
+    </div>
+</body>
+</html>

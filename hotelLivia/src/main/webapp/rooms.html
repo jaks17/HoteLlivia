@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Hotel Livia - Select Your Room</title>
+    <style>
+        button {
+            width: 100px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 8px 16px; /* Padding around text */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        /* Additional styles for the layout */
+        body {
+            font-family: 'Poppins', sans-serif; /* Font for the body */
+            background: linear-gradient(135deg, #d9a7c7, #fffcdc); /* Background gradient */
+            display: flex; /* Flexbox layout */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full height of the viewport */
+            padding: 20px; /* Padding around the body */
+        }
+
+        .container {
+            width: 900px; /* Width of the main container */
+            background-color: #ccffcc; /* Light green background */
+            border: 2px solid #ccffcc; /* Light green border */
+            padding: 50px; /* Padding inside the container */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            text-align: center; /* Center text */
+        }
+
+        h1 {
+            color: #6a5acd; /* Dark purple color for headings */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        h2 {
+            margin: 10px 0; /* Space above and below h2 */
+        }
+
+        table {
+            width: 800px; /* Width of the table */
+            margin: 20px auto; /* Center table horizontally */
+            border-collapse: collapse; /* Collapse borders */
+        }
+
+        td {
+            padding: 10px; /* Padding inside table cells */
+            border: 1px solid #ccc; /* Light grey border */
+        }
+
+        /* Link Styling */
+        a {
+            display: inline-block; /* Block display for better styling */
+            margin-top: 20px; /* Space above link */
+            text-decoration: none; /* Remove underline */
+            background-color: #6a5acd; /* Dark purple color */
+            color: white; /* White text */
+            padding: 12px 20px; /* Padding around text */
+            border-radius: 30px; /* Rounded corners */
+            font-weight: bold; /* Bold text */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        }
+
+        a:hover {
+            background-color: #483d8b; /* Lighter purple on hover */
+            transform: scale(1.05); /* Slightly increase size on hover */
+        }
+    </style>
+</head>
+<body>
+    <form action="rooms" method="post">
+        <div class="container">
+            <h1><u>Select Your Room Type</u></h1>
+            <h2>Rooms</h2>
+            <table>
+                <tr>
+                    <td>Sweet Room</td>
+                    <td>&#8377;699</td>
+                    <td>Start Date <input type="date" name="sweet1" min="2023-07-06"></td>
+                    <td>End Date <input type="date" name="sweet2" min="2023-07-07"></td>
+                </tr>
+                <tr>
+                    <td>Sweet Room AC</td>
+                    <td>&#8377;1299</td>
+                    <td>Start Date <input type="date" name="acSweet1" min="2023-07-06"></td>
+                    <td>End Date <input type="date" name="acSweet2" min="2023-07-07"></td>
+                </tr>
+                <tr>
+                    <td>Deluxe Single Room</td>
+                    <td>&#8377;1299</td>
+                    <td>Start Date <input type="date" name="single1" min="2023-07-06"></td>
+                    <td>End Date <input type="date" name="single2" min="2023-07-07"></td>
+                </tr>
+                <tr>
+                    <td>Deluxe Single Room AC</td>
+                    <td>&#8377;1999</td>
+                    <td>Start Date <input type="date" name="acSingle1" min="2023-07-06"></td>
+                    <td>End Date <input type="date" name="acSingle2" min="2023-07-07"></td>
+                </tr>
+                <tr>
+                    <td>Deluxe Double Room</td>
+                    <td>&#8377;1999</td>
+                    <td>Start Date <input type="date" name="double1" min="2023-07-06"></td>
+                    <td>End Date <input type="date" name="double2" min="2023-07-07"></td>
+                </tr>
+                <tr>
+                    <td>Deluxe Double Room AC</td>
+                    <td>&#8377;2499</td>
+                    <td>Start Date <input type="date" name="acDouble1" min="2023-07-06"></td>
+                    <td>End Date <input type="date" name="acDouble2" min="2023-07-07"></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Book</button>
+            <br>
+            <a href="login.html">Return to Login</a> <!-- Link to return to login page -->
+        </div>
+    </form>
+</body>
+</html>
